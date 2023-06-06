@@ -1,5 +1,6 @@
 import React from "react";
 import propTypes from 'prop-types'
+import'./About';
 
 
 export default function Navbar(props) {
@@ -29,7 +30,7 @@ export default function Navbar(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <a className="nav-link" href='./About.js'>
                 {props.about}
                 </a>
               </li>
