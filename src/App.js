@@ -4,21 +4,18 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-  Link
-} from "react-router-dom";
 
 function App() {
+  // const[alert,setAlert]=useState(null)
+  // const serAlert=(message,type)=>{
+  //   setAlert({
+  //     msg:message,
+     
+  //   })
+  // }
   return (
    <>
-   <Router>
-  
   <Navbar title="TextUtlis" about="About TextUtlis"/>
-  
   <div className="container">
   {/* <TextForm/> */}
   <Routes>
@@ -29,9 +26,6 @@ function App() {
   
   </Routes>
   </div>
-  
-  </Router>
-  <Footer/>
   
   
    </>
