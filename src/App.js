@@ -3,6 +3,13 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Routes,
+  Link
+} from "react-router-dom";
 
 
 
@@ -14,9 +21,15 @@ function App() {
    
   <Navbar title="TextUtlis" about="About TextUtlis"/>
   <div className="container">
-  <TextForm/>
-  
+  {/* <TextForm/> */}
+  <Router>
+  <Routes>
+  <Route index element={<TextForm />} />
   {/* <About/> */}
+  <Route path="/About.js" element={<About />} />
+
+  </Routes>
+  </Router>
   
   
  
