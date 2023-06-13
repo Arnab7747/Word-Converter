@@ -21,11 +21,11 @@ function App() {
    
   <Navbar title="TextUtlis" about="About TextUtlis"/>
   <div className="container">
-  {/* <TextForm/> */}
+  
   <Router>
   <Routes>
   <Route index element={<TextForm />} />
-  {/* <About/> */}
+  
   <Route path="/About.js" element={<About />} />
 
   </Routes>

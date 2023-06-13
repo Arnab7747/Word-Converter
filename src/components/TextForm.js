@@ -20,7 +20,12 @@ export default function TextForm(props){
     const handleOnChange=(event)=>{
         setText(event.target.value)
     }
-    
+    const handleClick=()=>{
+        console.log("Remove extra space")
+        let newText=text.replace(/\s+/g, ' ').trim();
+        setText(newText)
+
+    }
     
     return(
     <>
@@ -30,8 +35,9 @@ export default function TextForm(props){
       <label for="mybox" className="form-label">Enter Your Text here</label>
       <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows={8}></textarea>
      
-      <button className="btn  btn-primary mx-2" onClick={handleUpClick}>Convert to upper case</button>
-      <button className="btn  btn-primary mx-2" onClick={handleoClick}>Convert to Lower case</button>
+      <button className="btn btn-primary mx-3" onClick={handleUpClick}>Convert to upper case</button>
+      <button className="btn btn-primary mx-3" onClick={handleoClick}>Convert to Lower case</button>
+      <button className="btn btn-primary mx-3" onClick={handleClick}>Remove Extra Space</button>
     </div>
     <div className="container my-3">
         <h4>Your Text Summary</h4>
