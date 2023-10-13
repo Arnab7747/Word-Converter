@@ -34,9 +34,11 @@ export default function TextForm(props){
         <h1>{props.heading}</h1>
       <label for="mybox" className="form-label">Enter Your Text here</label>
       <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows={8}></textarea>
+      <div className="pad"></div>
      
       <button className="btn btn-primary mx-3" onClick={handleUpClick}>Convert to upper case</button>
       <button className="btn btn-primary mx-3" onClick={handleoClick}>Convert to Lower case</button>
+      
       <button className="btn btn-primary mx-3" onClick={handleClick}>Remove Extra Space</button>
     </div>
     <div className="container my-3">
