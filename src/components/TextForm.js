@@ -13,7 +13,7 @@ export default function TextForm(props){
         setText(newText)
     }
     const handleoClick=()=>{
-        console.log("uppercase was clicked")
+        console.log("lowercase was clicked")
         let newText= text.toLocaleLowerCase();
         setText(newText)
     }
